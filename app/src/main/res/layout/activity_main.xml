@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_padding">
+
+        <com.d.uiutil.tick.CTickViewTest
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <com.d.uiutil.togglebutton.ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="@dimen/dimens_padding"
+            app:tbtn_colorLight="@color/colorAccent"
+            app:tbtn_colorNormal="#ffffff"
+            app:tbtn_colorPadding="#e5e5e5"
+            app:tbtn_duration="200"
+            app:tbtn_padding="2dp" />
+
+        <com.d.uiutil.replybg.ReplyBgView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="@dimen/dimens_padding"
+            android:background="#00000000" />
+
+        <com.d.uiutil.vs.VSViewTest
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="@dimen/dimens_padding"
+            android:orientation="vertical" />
+
+        <com.d.uiutil.stroke.HoleBgView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="@dimen/dimens_padding" />
+
+        <com.d.uiutil.arcmenu.ArcMenu
+            android:id="@+id/am_menu"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/dimens_padding"
+            app:am_position="left_bottom"
+            app:am_radius="90dp">
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/am_circle_menu"
+                android:gravity="center"
+                android:text="P" />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/am_circle_menu"
+                android:gravity="center"
+                android:text="R" />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/am_circle_menu"
+                android:gravity="center"
+                android:text="M" />
+        </com.d.uiutil.arcmenu.ArcMenu>
+
+        <Button
+            android:id="@+id/btn_lrc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_padding"
+            android:gravity="center"
+            android:text="lrc" />
+
+        <Button
+            android:id="@+id/btn_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_padding"
+            android:gravity="center"
+            android:text="sort" />
+
+        <Button
+            android:id="@+id/btn_heart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_padding"
+            android:gravity="center"
+            android:text="heart" />
+    </LinearLayout>
+</ScrollView>
